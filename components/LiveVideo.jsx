@@ -112,7 +112,7 @@ const LiveVideo = ({ channelName }) => {
           videoTrack={localCameraTrack}
           cameraOn={state.cameraOn}
           s
-          micOn={!state.micOn}
+          micOn={state.micOn}
           playAudio={state.micOn}
           playVideo={state.cameraOn}
           cover={
