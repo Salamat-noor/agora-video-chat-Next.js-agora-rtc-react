@@ -89,7 +89,7 @@ body {
 }
 
 #endConnection:hover {
-  background-color: red;
+  /* background-color: red; */
   border-color: white;
   opacity: 100%;
 }

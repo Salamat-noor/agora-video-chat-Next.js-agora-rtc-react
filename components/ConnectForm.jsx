@@ -16,10 +16,22 @@ const ConnectForm = ({ connectToVideo }) => {
     }
     connectToVideo(channelName);
   };
+  console.log(navigator);
 
   return (
     <form onSubmit={handleConnect}>
-      <h1>{channelName ? `Channel ${channelName}` : "Channel name"}</h1>
+      <h1>
+        {channelName ? (
+          <span>
+            Channel{" "}
+            <span className="font-sans font-semibold text-orange-400 text-xl">
+              {channelName}
+            </span>
+          </span>
+        ) : (
+          "Channel name"
+        )}
+      </h1>
       <div className="card flex flex-col gap-2">
         <input
           type="text"
